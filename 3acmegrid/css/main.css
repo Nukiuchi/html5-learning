@@ -164,11 +164,10 @@ p {
     grid-column: span 2;
   }
   #section-b ul {
-    display:flex;
+    display: flex;
     justify-content: space-around;
   }
-
   #section-b li {
-    width:33%;
+    width: 33%;
   }
 }
