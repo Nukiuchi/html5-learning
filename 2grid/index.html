@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Page Title</title>
+  <title>CSS Grids</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-  <script src="main.js"></script>
+  <style>
+    .wrapper {
+      display: grid;
+      grid-template-columns: 70% 30%;
+      grid-gap: 1em;
+    }
+
+    .wrapper>div {
+      background-color: #eee;
+      padding: 1em;
+    }
+
+    .wrapper>div:nth-child(odd) {
+      background: #ddd;
+    }
+  </style>
 </head>
+
 <body>
-  
+  <div class="wrapper">
+    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere dolorum rerum corrupti, possimus quis odit harum distinctio
+      quaerat voluptatem, assumenda dicta dolores quos cupiditate accusantium officiis eaque illo reiciendis incidunt delectus,
+      culpa vero. Quis vel, nihil natus repudiandae, maiores unde similique voluptas officia velit amet eaque at enim laborum
+      recusandae a dignissimos adipisci. Debitis quisquam ex vero illo modi deleniti excepturi fuga aperiam repudiandae reiciendis!
+      Sunt minima doloremque corrupti sequi, officiis explicabo enim, rerum id quod ipsum suscipit a cum.</div>
+
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolor beatae sapiente illum rerum reprehenderit non neque
+      maiores eaque odit quae reiciendis ab, dolore rem quo, explicabo unde iure corporis!</div>
+    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere dolorum rerum corrupti, possimus quis odit harum distinctio
+      quaerat voluptatem, assumenda dicta dolores quos cupiditate accusantium officiis eaque illo reiciendis incidunt delectus,
+      culpa vero. Quis vel, nihil natus repudiandae, maiores unde similique voluptas officia velit amet eaque at enim laborum
+      recusandae a dignissimos adipisci. Debitis quisquam ex vero illo modi deleniti excepturi fuga aperiam repudiandae reiciendis!
+      Sunt minima doloremque corrupti sequi, officiis explicabo enim, rerum id quod ipsum suscipit a cum.</div>
+
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolor beatae sapiente illum rerum reprehenderit non neque
+      maiores eaque odit quae reiciendis ab, dolore rem quo, explicabo unde iure corporis!</div>
+  </div>
 </body>
+
 </html>
