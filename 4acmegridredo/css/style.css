@@ -41,6 +41,11 @@ p {
   color: #275;
 }
 
+.dark {
+  background-color: #333;
+  color: #fff;
+}
+
 
 /* Header */
 
@@ -57,6 +62,7 @@ p {
   color: #fff;
   text-decoration: none;
   padding: .5em 1em;
+  text-transform: uppercase;
 }
 
 #main-header nav div.current a {
@@ -135,6 +141,54 @@ p {
 }
 
 
+/* About Us & Services */
+
+#about,
+#services {
+  background-color: #dfe;
+  color: #333;
+}
+
+#about .main-col h1,
+#services .main-col h1 {
+  padding-bottom: 0;
+}
+
+#about .main-col p,
+#services .main-col p {
+  margin: 1em 1em;
+  padding: 1em 3em;
+}
+
+#services form input,
+#services form textarea,
+#services form button {
+  width: 90%;
+  padding: .5em .5em;
+}
+
+#services form div,
+#services form button {
+  margin-bottom: 1em;
+}
+
+
+/* Sidebar */
+
+.sidebar {
+  margin: 1em 1em;
+}
+
+.sidebar h1 {
+  padding-bottom: 0;
+}
+
+.sidebar p {
+  margin: 1em 1em;
+  padding: 2em 3em;
+}
+
+
 /* Footer */
 
 #main-footer {
@@ -174,5 +228,19 @@ p {
   }
   #cards {
     display: flex;
+  }
+  .main-col {
+    grid-column: 1/4;
+    text-align: left;
+  }
+  .main-col h1 {
+    padding-left: 2.5em;
+  }
+  .sidebar p {
+    margin: 0 0;
+  }
+  .sidebar {
+    min-width: 200px;
+    text-align: left;
   }
 }
