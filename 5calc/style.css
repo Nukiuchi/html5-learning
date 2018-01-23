@@ -1,0 +1,117 @@
+/* Global */
+
+body {
+  background-color: #ccc;
+  font: 1em/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Header */
+
+header {
+  border-bottom: 3px solid #333;
+}
+
+header h1 {
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+header p {
+  font-style: italic;
+  margin-bottom: .5em;
+}
+
+
+/* Main */
+
+main {
+  padding: 1em 0;
+  background-color: #ddd;
+}
+
+
+/* Calc */
+
+#calc-container {
+  border: 3px solid #333;
+  min-width: 300px;
+  width: 90%;
+  max-width: 500px;
+  margin: 1em;
+}
+
+#output-container {
+  border-bottom: 3px solid #333;
+}
+
+#output-container input[type="text"] {
+  width: 100%;
+  border: 0;
+  background-color: #ddd;
+  font: 1.5em/1.5 Arial, Helvetica, sans-serif;
+  text-align: right;
+  padding: 0 .4em;
+  box-sizing: border-box;
+}
+
+#output-container input[type="text"]:hover,
+#output-container input[type="text"]:focus {
+  background-color: #eee;
+  border: 0;
+}
+
+#keyboard-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: .2em;
+  padding: .2em;
+}
+
+#keyboard-container .btn {
+  font: 1.5em/1.5 Arial, Helvetica, sans-serif;
+  height: 3em;
+  background-color: #ccc;
+  border: 0;
+  padding: 0;
+}
+
+#keyboard-container .btn:last-child {
+  grid-column: span 2;
+}
+
+#keyboard-container .btn:hover {
+  background-color: #eee;
+}
+
+#keyboard-container .btn[data-superscript-after]::after {
+  content: attr(data-superscript-after);
+  vertical-align: super;
+  font-size: .7em;
+}
+
+#keyboard-container .btn[data-subscript-after]::after {
+  content: attr(data-subscript-after);
+  vertical-align: sub;
+  font-size: .9em;
+}
+
+#keyboard-container .btn[data-superscript-before]::before {
+  content: attr(data-superscript-before);
+  vertical-align: super;
+  font-size: .7em;
+}
+
+
+/* Footer */
+
+footer {
+  border-top: 3px solid #333;
+  background-color: #ccc;
+}
+
+footer p {
+  margin-top: .5em;
+}
