@@ -1,11 +1,34 @@
 // --- Calc Class
-// current value
-// input value
-// memory slot
-// f add
-// f sub
-// f multi
-// f div
+class Calc {
+  constructor() {
+    // current value
+    this.current = 0;
+    // input value
+    this.input = 0;
+    // memory value
+    this.memory = 0;
+  }
+
+  // f add
+  add() {
+    this.current += this.input;
+  }
+
+  // f sub
+  sub() {
+    this.current -= this.input;
+  }
+
+  // f multi
+  multi() {
+    this.current *= this.input;
+  }
+
+  // f div
+  div() {
+    this.current /= this.input;
+  }
+}
 
 // f exp
 // f inv
