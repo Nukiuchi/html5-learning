@@ -74,10 +74,43 @@ class Calc {
   }
 
   // f m store
+  memoryStore() {
+    if (this.input !== "") {
+      this.memory = this.input;
+    } else {
+      this.memory = this.current;
+    }
+  }
+
   // f m recall
+  memoryRecall() {
+    if (this.memory !== "") {
+      return this.memory;
+    } else {
+      return "";
+    }
+  }
   // f m clear 
+  memoryClear() {
+    this.memory = "";
+  }
+
   // f m add
+  memoryAdd() {
+    if (this.input !== "") {
+      this.memory += this.input;
+    } else {
+      this.memory += this.current;
+    }
+  }
   // f m sub
+  memorySub() {
+    if (this.input !== "") {
+      this.memory -= this.input;
+    } else {
+      this.memory -= this.current;
+    }
+  }
   // --- end Calc class
 }
 
@@ -196,41 +229,29 @@ function bindFormatting() {
 function bindMemory() {
   // MS pushed
   document.getElementById("btn-ms").addEventListener("click", event => {
-    if (calc.input !== "") {
-      calc.memory = calc.input;
-    } else {
-      calc.memory = calc.current;
-    }
+    calc.memoryStore();
   });
 
   // MR pushed
   document.getElementById("btn-mr").addEventListener("click", event => {
-    if (calc.memory !== "") {
-      write(calc.memory);
+    if (calc.memoryRecall() !== "") {
+      write(calc.memoryRecall());
     }
   });
 
   // M+ pushed
   document.getElementById("btn-mp").addEventListener("click", event => {
-    if (calc.input !== "") {
-      calc.memory += calc.input;
-    } else {
-      calc.memory += calc.current;
-    }
+    calc.memoryAdd();
   });
 
   // M- pushed
   document.getElementById("btn-mm").addEventListener("click", event => {
-    if (calc.input !== "") {
-      calc.memory -= calc.input;
-    } else {
-      calc.memory -= calc.current;
-    }
+    calc.memorySub();
   });
 
   // MC pushed
   document.getElementById("btn-mc").addEventListener("click", event => {
-    calc.memory = "";
+    calc.memoryClear();
   });
 }
 
