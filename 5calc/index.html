@@ -18,38 +18,38 @@
   <main>
     <div id="calc-container">
       <div id="output-container">
-        <input type="text" id="output-field">
+        <input type="text" id="output-field" readonly>
       </div>
       <div id="keyboard-container">
-        <button class="btn btn-memory">MS</button>
-        <button class="btn btn-memory">MR</button>
-        <button class="btn btn-memory">M+</button>
-        <button class="btn btn-memory">M-</button>
-        <button class="btn btn-memory">MC</button>
-        <button class="btn btn-format">CE</button>
-        <button class="btn btn-format">C</button>
-        <button class="btn btn-format">&#x232B;</button>
-        <button class="btn btn-operator">%</button>
-        <button class="btn btn-operator">&Sqrt;</button>
+        <button class="btn btn-memory" id="btn-ms">MS</button>
+        <button class="btn btn-memory" id="btn-mr">MR</button>
+        <button class="btn btn-memory" id="btn-mp">M+</button>
+        <button class="btn btn-memory" id="btn-mm">M-</button>
+        <button class="btn btn-memory" id="btn-mc">MC</button>
+        <button class="btn btn-format" id="btn-ce">CE</button>
+        <button class="btn btn-format" id="btn-c">C</button>
+        <button class="btn btn-format" id="btn-bkspace">&#x232B;</button>
+        <button class="btn btn-operator" id="btn-perc">%</button>
+        <button class="btn btn-operator" id="btn-sqrt">&Sqrt;</button>
         <button class="btn btn-number">7</button>
         <button class="btn btn-number">8</button>
         <button class="btn btn-number">9</button>
-        <button class="btn btn-operator" data-superscript-after="n">x</button>
-        <button class="btn btn-operator" data-superscript-before="1" data-subscript-after="x">/</button>
+        <button class="btn btn-operator" id="btn-exp" data-superscript-after="n">x</button>
+        <button class="btn btn-operator" id="btn-inv" data-superscript-before="1" data-subscript-after="x">/</button>
         <button class="btn btn-number">4</button>
         <button class="btn btn-number">5</button>
         <button class="btn btn-number">6</button>
-        <button class="btn btn-operator">&div;</button>
-        <button class="btn btn-operator">&times;</button>
+        <button class="btn btn-operator" id="btn-multi">&times;</button>
+        <button class="btn btn-operator" id="btn-div">&div;</button>
         <button class="btn btn-number">1</button>
         <button class="btn btn-number">2</button>
         <button class="btn btn-number">3</button>
-        <button class="btn btn-operator">-</button>
-        <button class="btn btn-operator">+</button>
-        <button class="btn btn-format">+/-</button>
+        <button class="btn btn-operator" id="btn-add">+</button>
+        <button class="btn btn-operator" id="btn-sub">-</button>
+        <button class="btn btn-format" id="btn-plusminus">+/-</button>
         <button class="btn btn-number">0</button>
-        <button class="btn btn-format">,</button>
-        <button class="btn btn-operator">=</button>
+        <button class="btn btn-format" id="btn-separator">.</button>
+        <button class="btn btn-operator" id="btn-eq">=</button>
       </div>
     </div>
   </main>
