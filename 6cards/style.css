@@ -1,0 +1,47 @@
+/* Global */
+
+body {
+    background-color: #ccc;
+    font: 1em/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Header */
+  
+  header {
+    border-bottom: 3px solid #333;
+    padding: 0 1em;
+  }
+  
+  header h1 {
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+  
+  header p {
+    font-style: italic;
+    margin-bottom: .5em;
+  }
+  
+  /* Main */
+  
+  main {
+    padding: 1em 0;
+    background-color: #ddd;
+  }
+  
+
+  
+  
+  /* Footer */
+  
+  footer {
+    border-top: 3px solid #333;
+    background-color: #ccc;
+    padding: 0 1em;
+  }
+  
+  footer p {
+    margin-top: .5em;
+  }
